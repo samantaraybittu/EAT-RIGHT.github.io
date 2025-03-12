@@ -1,4 +1,11 @@
 # EAT-RIGHT.github.io
-![Homepage](![EAT RIGHT_ Healthy Food Experience - Google Chrome 3_12_2025 5_19_18 PM](https://github.com/user-attachments/assets/80a6e686-e6b1-4d84-aab2-dc8c4fecfed6))
+![Homepage - light mode](![EAT RIGHT_ Healthy Food Experience - Google Chrome 3_12_2025 5_19_18 PM](https://github.com/user-attachments/assets/80a6e686-e6b1-4d84-aab2-dc8c4fecfed6))
 
+![homepage - darkmode](![EAT RIGHT_ Healthy Food Experience - Google Chrome 3_12_2025 5_20_26 PM](https://github.com/user-attachments/assets/1213ec67-bb7b-4db4-a7d3-b4c8d59f9fad)
+)
 
+![menu](![EAT RIGHT_ Healthy Food Experience - Google Chrome 3_12_2025 5_20_33 PM](https://github.com/user-attachments/assets/cee1cfc9-738d-4fd8-86b3-8acf16457ee4)
+)(![EAT RIGHT_ Healthy Food Experience - Google Chrome 3_12_2025 5_20_44 PM](https://github.com/user-attachments/assets/31f9a64e-ddf6-4430-9c07-ba88ca98138a)
+)(![EAT RIGHT_ Healthy Food Experience - Google Chrome 3_12_2025 5_19_26 PM](https://github.com/user-attachments/assets/f40b7559-cb27-4c57-a66d-0b1d6c61efce)
+)(![EAT RIGHT_ Healthy Food Experience - Google Chrome 3_12_2025 5_19_37 PM](https://github.com/user-attachments/assets/14e200b5-a7f6-42ef-bb19-0903693c7d37)
+)
