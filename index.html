@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAT RIGHT| Healthy Food Experience</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <style>
+        .icon-fallback {
+            display: none;
+        }
+        .fas.fa-phone::before { content: '📞'; }
+        .fas.fa-envelope::before { content: '📧'; }
+        .fas.fa-location-dot::before { content: '📍'; }
+    </style>
+</head>
+<body>
+    <div id="test-element" style="display: none;">Test Element</div>
+
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                EAT RIGHT
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#specials">Specials</a></li>
+                    <li><a href="#order">Order Now</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+            <div class="dark-mode-toggle">
+                <input type="checkbox" id="darkModeToggle" class="toggle-input">
+                <label for="darkModeToggle" class="toggle-label">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="food-grid">
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&h=600&q=80" alt="Thali">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&h=600&q=80" alt="Biryani">
+                    <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&h=600&q=80" alt="Curry">
+                    <img src="https://images.unsplash.com/photo-1625398407796-82650a8c135f?auto=format&fit=crop&w=800&h=600&q=80" alt="Dosa">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&h=600&q=80" alt="Samosa">
+                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=800&h=600&q=80" alt="Palak Paneer">
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Welcome to EAT HEALTHY</h1>
+                <p class="tagline">Experience Authentic Indian Cuisine</p>
+                <p class="sub-tagline">Traditional flavors, Modern presentation</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="cta-button primary">View Menu</a>
+                    <a href="#order" class="cta-button secondary">Order Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2>Our Signature Menu</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="thali">Thali</button>
+                <button class="category-btn" data-category="biryani">Biryani</button>
+                <button class="category-btn" data-category="curry">Curry</button>
+                <button class="category-btn" data-category="snacks">Snacks</button>
+            </div>
+            <div class="food-type-buttons">
+                <button class="food-filter-btn active" data-type="all">
+                    <i class="fas fa-utensils"></i> All Food
+                </button>
+                <button class="food-filter-btn" data-type="veg">
+                    <i class="fas fa-leaf"></i> Veg Only
+                </button>
+                <button class="food-filter-btn" data-type="non-veg">
+                    <i class="fas fa-drumstick-bite"></i> Non-Veg
+                </button>
+            </div>
+            <div class="menu-container">
+                <button class="nav-btn prev-btn" aria-label="Previous">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="menu-grid">
+                    <div class="menu-item" data-category="thali" data-type="veg">
+                        <div class="item-image">
+                            <div class="food-initial" data-food="thali">
+                                <div class="text-content">
+                                    <div class="initial">RT</div>
+                                    <div class="food-name">Royal Thali</div>
+                                </div>
+                                <div class="food-emoji">🍱</div>
+                            </div>
+                            <div class="item-type-indicator veg">
+                                <i class="fas fa-leaf"></i>
+                                Vegetarian
+                            </div>
+                            <div class="item-overlay">
+                                <div class="item-details">
+                                    <span class="calories"><i class="fas fa-fire"></i> 850 cal</span>
+                                    <span class="prep-time"><i class="fas fa-clock"></i> 20 min</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Royal Thali</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+                            <p>Complete Indian meal with dal, paneer, roti, rice, and more</p>
+                            <div class="item-footer">
+                                <span class="price">₹399</span>
+                                <button class="add-to-cart" data-item="Royal Thali" data-price="399">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="biryani" data-type="non-veg">
+                        <div class="item-image">
+                            <div class="food-initial" data-food="biryani">
+                                <div class="text-content">
+                                    <div class="initial">C</div>
+                                    <div class="food-name">Chicken Biryani</div>
+                                </div>
+                                <div class="food-emoji">🍚</div>
+                            </div>
+                            <div class="item-type-indicator non-veg">
+                                <i class="fas fa-drumstick-bite"></i>
+                                Non-Vegetarian
+                            </div>
+                            <div class="item-overlay">
+                                <div class="item-details">
+                                    <span class="spice-level"><i class="fas fa-pepper-hot"></i> High</span>
+                                    <span class="prep-time"><i class="fas fa-clock"></i> 30 min</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Chicken Biryani</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                </div>
+                            </div>
+                            <p>Fragrant basmati rice with tender chicken and aromatic spices</p>
+                            <div class="item-footer">
+                                <span class="price">₹249</span>
+                                <button class="add-to-cart" data-item="Chicken Biryani" data-price="249">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="curry" data-type="veg">
+                        <div class="item-image">
+                            <div class="food-initial" data-food="curry">
+                                <div class="text-content">
+                                    <div class="initial">PB</div>
+                                    <div class="food-name">Paneer Butter Masala</div>
+                                </div>
+                                <div class="food-emoji">🍛</div>
+                            </div>
+                            <div class="item-type-indicator veg">
+                                <i class="fas fa-leaf"></i>
+                                Vegetarian
+                            </div>
+                            <div class="item-overlay">
+                                <div class="item-details">
+                                    <span class="spice-level"><i class="fas fa-pepper-hot"></i> Medium</span>
+                                    <span class="prep-time"><i class="fas fa-clock"></i> 20 min</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Paneer Butter Masala</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.7</span>
+                                </div>
+                            </div>
+                            <p>Cottage cheese cubes in rich, creamy tomato gravy</p>
+                            <div class="item-footer">
+                                <span class="price">₹229</span>
+                                <button class="add-to-cart" data-item="Paneer Butter Masala" data-price="229">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="curry" data-type="veg">
+                        <div class="item-image">
+                            <div class="food-initial" data-food="curry">
+                                <div class="text-content">
+                                    <div class="initial">P</div>
+                                    <div class="food-name">Palak Paneer</div>
+                                </div>
+                                <div class="food-emoji">🍛</div>
+                            </div>
+                            <div class="item-type-indicator veg">
+                                <i class="fas fa-leaf"></i>
+                                Vegetarian
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Palak Paneer</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.6</span>
+                                </div>
+                            </div>
+                            <p>Cottage cheese in creamy spinach gravy</p>
+                            <div class="item-footer">
+                                <span class="price">₹199</span>
+                                <button class="add-to-cart" data-item="Palak Paneer" data-price="199">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="snacks" data-type="veg">
+                        <div class="item-image">
+                            <div class="food-initial" data-food="snacks">
+                                <div class="text-content">
+                                    <div class="initial">S</div>
+                                    <div class="food-name">Samosa Platter</div>
+                                </div>
+                                <div class="food-emoji">🥘</div>
+                            </div>
+                            <div class="item-type-indicator veg">
+                                <i class="fas fa-leaf"></i>
+                                Vegetarian
+                            </div>
+                            <div class="item-overlay">
+                                <div class="item-details">
+                                    <span class="serves"><i class="fas fa-users"></i> 2-3</span>
+                                    <span class="prep-time"><i class="fas fa-clock"></i> 15 min</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Samosa Platter</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.6</span>
+                                </div>
+                            </div>
+                            <p>Crispy pastry filled with spiced potatoes, served with chutneys</p>
+                            <div class="item-footer">
+                                <span class="price">₹149</span>
+                                <button class="add-to-cart" data-item="Samosa Platter" data-price="149">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="snacks" data-type="veg">
+                        <div class="item-image">
+                            <div class="food-initial" data-food="snacks">
+                                <div class="text-content">
+                                    <div class="initial">M</div>
+                                    <div class="food-name">Masala Dosa</div>
+                                </div>
+                                <div class="food-emoji">🥘</div>
+                            </div>
+                            <div class="item-type-indicator veg">
+                                <i class="fas fa-leaf"></i>
+                                Vegetarian
+                            </div>
+                            <div class="item-overlay">
+                                <div class="item-details">
+                                    <span class="spice-level"><i class="fas fa-pepper-hot"></i> Medium</span>
+                                    <span class="prep-time"><i class="fas fa-clock"></i> 15 min</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Masala Dosa</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                </div>
+                            </div>
+                            <p>Crispy rice crepe filled with spiced potato, served with sambar and chutney</p>
+                            <div class="item-footer">
+                                <span class="price">₹129</span>
+                                <button class="add-to-cart" data-item="Masala Dosa" data-price="129">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="curry" data-type="veg">
+                        <div class="item-image">
+                            <div class="food-initial" data-food="curry">
+                                <div class="text-content">
+                                    <div class="initial">D</div>
+                                    <div class="food-name">Dal Makhani</div>
+                                </div>
+                                <div class="food-emoji">🍛</div>
+                            </div>
+                            <div class="item-type-indicator veg">
+                                <i class="fas fa-leaf"></i>
+                                Vegetarian
+                            </div>
+                            <div class="item-overlay">
+                                <div class="item-details">
+                                    <span class="spice-level"><i class="fas fa-pepper-hot"></i> Medium</span>
+                                    <span class="prep-time"><i class="fas fa-clock"></i> 25 min</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Dal Makhani</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.7</span>
+                                </div>
+                            </div>
+                            <p>Creamy black lentils cooked overnight with butter and spices</p>
+                            <div class="item-footer">
+                                <span class="price">₹199</span>
+                                <button class="add-to-cart" data-item="Dal Makhani" data-price="199">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="curry" data-type="non-veg">
+                        <div class="item-image">
+                            <div class="food-initial" data-food="biryani">
+                                <div class="text-content">
+                                    <div class="initial">B</div>
+                                    <div class="food-name">Butter Chicken</div>
+                                </div>
+                                <div class="food-emoji">🍚</div>
+                            </div>
+                            <div class="item-type-indicator non-veg">
+                                <i class="fas fa-drumstick-bite"></i>
+                                Non-Vegetarian
+                            </div>
+                            <div class="item-overlay">
+                                <div class="item-details">
+                                    <span class="spice-level"><i class="fas fa-pepper-hot"></i> Medium</span>
+                                    <span class="prep-time"><i class="fas fa-clock"></i> 30 min</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Butter Chicken</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+                            <p>Tender chicken in rich, creamy tomato gravy</p>
+                            <div class="item-footer">
+                                <span class="price">₹299</span>
+                                <button class="add-to-cart" data-item="Butter Chicken" data-price="299">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="curry" data-type="veg">
+                        <div class="item-image">
+                            <div class="food-initial" data-food="curry">
+                                <div class="text-content">
+                                    <div class="initial">M</div>
+                                    <div class="food-name">Malai Kofta</div>
+                                </div>
+                                <div class="food-emoji">🍛</div>
+                            </div>
+                            <div class="item-type-indicator veg">
+                                <i class="fas fa-leaf"></i>
+                                Vegetarian
+                            </div>
+                            <div class="item-overlay">
+                                <div class="item-details">
+                                    <span class="spice-level"><i class="fas fa-pepper-hot"></i> Mild</span>
+                                    <span class="prep-time"><i class="fas fa-clock"></i> 25 min</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Malai Kofta</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.7</span>
+                                </div>
+                            </div>
+                            <p>Paneer dumplings in rich creamy gravy</p>
+                            <div class="item-footer">
+                                <span class="price">₹249</span>
+                                <button class="add-to-cart" data-item="Malai Kofta" data-price="249">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="biryani" data-type="non-veg">
+                        <div class="item-image">
+                            <div class="food-initial" data-food="biryani">
+                                <div class="text-content">
+                                    <div class="initial">M</div>
+                                    <div class="food-name">Mutton Biryani</div>
+                                </div>
+                                <div class="food-emoji">🍚</div>
+                            </div>
+                            <div class="item-type-indicator non-veg">
+                                <i class="fas fa-drumstick-bite"></i>
+                                Non-Vegetarian
+                            </div>
+                            <div class="item-overlay">
+                                <div class="item-details">
+                                    <span class="spice-level"><i class="fas fa-pepper-hot"></i> High</span>
+                                    <span class="prep-time"><i class="fas fa-clock"></i> 45 min</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Mutton Biryani</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                </div>
+                            </div>
+                            <p>Fragrant rice with tender mutton and aromatic spices</p>
+                            <div class="item-footer">
+                                <span class="price">₹349</span>
+                                <button class="add-to-cart" data-item="Mutton Biryani" data-price="349">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="snacks" data-type="veg">
+                        <div class="item-image">
+                            <div class="food-initial" data-food="snacks">
+                                <div class="text-content">
+                                    <div class="initial">P</div>
+                                    <div class="food-name">Paneer Tikka</div>
+                                </div>
+                                <div class="food-emoji">🥘</div>
+                            </div>
+                            <div class="item-type-indicator veg">
+                                <i class="fas fa-leaf"></i>
+                                Vegetarian
+                            </div>
+                            <div class="item-overlay">
+                                <div class="item-details">
+                                    <span class="spice-level"><i class="fas fa-pepper-hot"></i> Medium</span>
+                                    <span class="prep-time"><i class="fas fa-clock"></i> 20 min</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Paneer Tikka</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.6</span>
+                                </div>
+                            </div>
+                            <p>Grilled cottage cheese with spices and vegetables</p>
+                            <div class="item-footer">
+                                <span class="price">₹229</span>
+                                <button class="add-to-cart" data-item="Paneer Tikka" data-price="229">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vegetarian Items -->
+                    <div class="menu-item" data-category="curry" data-type="veg">
+                        <div class="item-image">
+                            <div class="food-initial" data-food="curry">
+                                <div class="text-content">
+                                    <div class="initial">C</div>
+                                    <div class="food-name">Chana Masala</div>
+                                </div>
+                                <div class="food-emoji">🍛</div>
+                            </div>
+                            <div class="item-type-indicator veg">
+                                <i class="fas fa-leaf"></i>
+                                Vegetarian
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Chana Masala</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                            <p>Spiced chickpeas in a rich tomato gravy</p>
+                            <div class="item-footer">
+                                <span class="price">₹179</span>
+                                <button class="add-to-cart" data-item="Chana Masala" data-price="179">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="curry" data-type="veg">
+                        <div class="item-image">
+                            <div class="food-initial" data-food="curry">
+                                <div class="text-content">
+                                    <div class="initial">V</div>
+                                    <div class="food-name">Veg Korma</div>
+                                </div>
+                                <div class="food-emoji">🥘</div>
+                            </div>
+                            <div class="item-type-indicator veg">
+                                <i class="fas fa-leaf"></i>
+                                Vegetarian
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Vegetable Korma</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.6</span>
+                                </div>
+                            </div>
+                            <p>Mixed vegetables in creamy coconut curry</p>
+                            <div class="item-footer">
+                                <span class="price">₹199</span>
+                                <button class="add-to-cart" data-item="Vegetable Korma" data-price="199">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Non-Vegetarian Items -->
+                    <div class="menu-item" data-category="curry" data-type="non-veg">
+                        <div class="item-image">
+                            <div class="food-initial" data-food="curry">
+                                <div class="text-content">
+                                    <div class="initial">CM</div>
+                                    <div class="food-name">Chicken Masala</div>
+                                </div>
+                                <div class="food-emoji">🍗</div>
+                            </div>
+                            <div class="item-type-indicator non-veg">
+                                <i class="fas fa-drumstick-bite"></i>
+                                Non-Vegetarian
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Chicken Masala</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.7</span>
+                                </div>
+                            </div>
+                            <p>Tender chicken in aromatic spiced gravy</p>
+                            <div class="item-footer">
+                                <span class="price">₹249</span>
+                                <button class="add-to-cart" data-item="Chicken Masala" data-price="249">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="biryani" data-type="non-veg">
+                        <div class="item-image">
+                            <div class="food-initial" data-food="biryani">
+                                <div class="text-content">
+                                    <div class="initial">FB</div>
+                                    <div class="food-name">Fish Biryani</div>
+                                </div>
+                                <div class="food-emoji">🐟</div>
+                            </div>
+                            <div class="item-type-indicator non-veg">
+                                <i class="fas fa-fish"></i>
+                                Non-Vegetarian
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Fish Biryani</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.6</span>
+                                </div>
+                            </div>
+                            <p>Aromatic rice with marinated fish and spices</p>
+                            <div class="item-footer">
+                                <span class="price">₹299</span>
+                                <button class="add-to-cart" data-item="Fish Biryani" data-price="299">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add a new Thali -->
+                    <div class="menu-item" data-category="thali" data-type="veg">
+                        <div class="item-image">
+                            <div class="food-initial" data-food="thali">
+                                <div class="text-content">
+                                    <div class="initial">GT</div>
+                                    <div class="food-name">Gujarati Thali</div>
+                                </div>
+                                <div class="food-emoji">🍱</div>
+                            </div>
+                            <div class="item-type-indicator veg">
+                                <i class="fas fa-leaf"></i>
+                                Vegetarian
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Gujarati Thali</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                </div>
+                            </div>
+                            <p>Traditional Gujarati dishes with khichdi and kadhi</p>
+                            <div class="item-footer">
+                                <span class="price">₹349</span>
+                                <button class="add-to-cart" data-item="Gujarati Thali" data-price="349">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more Biryanis -->
+                    <div class="menu-item" data-category="biryani" data-type="veg">
+                        <div class="item-image">
+                            <div class="food-initial" data-food="biryani">
+                                <div class="text-content">
+                                    <div class="initial">VB</div>
+                                    <div class="food-name">Veg Biryani</div>
+                                </div>
+                                <div class="food-emoji">🍚</div>
+                            </div>
+                            <div class="item-type-indicator veg">
+                                <i class="fas fa-leaf"></i>
+                                Vegetarian
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Vegetable Biryani</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                            <p>Fragrant rice with mixed vegetables and aromatic spices</p>
+                            <div class="item-footer">
+                                <span class="price">₹249</span>
+                                <button class="add-to-cart" data-item="Vegetable Biryani" data-price="249">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more Curries -->
+                    <div class="menu-item" data-category="curry" data-type="non-veg">
+                        <div class="item-image">
+                            <div class="food-initial" data-food="curry">
+                                <div class="text-content">
+                                    <div class="initial">BM</div>
+                                    <div class="food-name">Butter Chicken</div>
+                                </div>
+                                <div class="food-emoji">🍗</div>
+                            </div>
+                            <div class="item-type-indicator non-veg">
+                                <i class="fas fa-drumstick-bite"></i>
+                                Non-Vegetarian
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Butter Chicken</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+                            <p>Creamy tomato curry with tender chicken pieces</p>
+                            <div class="item-footer">
+                                <span class="price">₹299</span>
+                                <button class="add-to-cart" data-item="Butter Chicken" data-price="299">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more Snacks -->
+                    <div class="menu-item" data-category="snacks" data-type="veg">
+                        <div class="item-image">
+                            <div class="food-initial" data-food="snacks">
+                                <div class="text-content">
+                                    <div class="initial">PB</div>
+                                    <div class="food-name">Pav Bhaji</div>
+                                </div>
+                                <div class="food-emoji">🥘</div>
+                            </div>
+                            <div class="item-type-indicator veg">
+                                <i class="fas fa-leaf"></i>
+                                Vegetarian
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Pav Bhaji</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.7</span>
+                                </div>
+                            </div>
+                            <p>Spiced vegetable mash served with buttered bread</p>
+                            <div class="item-footer">
+                                <span class="price">₹199</span>
+                                <button class="add-to-cart" data-item="Pav Bhaji" data-price="199">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Update the Family Thali Special menu item -->
+                    <div class="menu-item" data-category="thali" data-type="veg">
+                        <div class="item-image">
+                            <div class="food-initial" data-food="thali">
+                                <div class="text-content">
+                                    <div class="initial">FT</div>
+                                    <div class="food-name">Family Thali</div>
+                                </div>
+                                <div class="food-emoji">🍱</div>
+                            </div>
+                            <div class="item-type-indicator veg">
+                                <i class="fas fa-leaf"></i>
+                                Vegetarian
+                            </div>
+                            <div class="item-overlay">
+                                <div class="item-details">
+                                    <span class="calories"><i class="fas fa-fire"></i> 1200 cal</span>
+                                    <span class="prep-time"><i class="fas fa-clock"></i> 25 min</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Family Thali Special</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+                            <p>Complete thali with 3 rotis, 2 sabzi, dal, rice, and dessert</p>
+                            <div class="item-footer">
+                                <span class="price">₹599</span>
+                                <button class="add-to-cart" data-item="Family Thali Special" data-price="599">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="nav-btn next-btn" aria-label="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section id="specials" class="specials-section">
+            <h2>Today's Special Offers</h2>
+            <div class="special-offer">
+                <div class="special-timer">
+                    <p>Limited Time Offer</p>
+                    <div id="special-countdown">
+                        <div class="countdown-item">
+                            <span id="hours">05</span>
+                            <span class="label">Hours</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes">00</span>
+                            <span class="label">Minutes</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds">00</span>
+                            <span class="label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="special-grid">
+                    <div class="special-item">
+                        <div class="special-image">
+                            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&h=600&q=80" 
+                                alt="Special Thali Offer"
+                                loading="lazy">
+                            <div class="special-badge">
+                                <span>30% OFF</span>
+                            </div>
+                        </div>
+                        <div class="special-content">
+                            <h3>Family Thali Special</h3>
+                            <p>Complete thali with 3 rotis, 2 sabzi, dal, rice, and dessert</p>
+                            <div class="special-price">
+                                <span class="original-price">₹599</span>
+                                <span class="discounted-price">₹499</span>
+                            </div>
+                            <button class="add-to-cart" data-item="Family Thali Special" data-price="499">
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="order">
+            <h2>Your Cart</h2>
+            <div class="cart-container">
+                <div id="cart-items" class="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </div>
+                <div class="cart-summary">
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span>₹<span id="subtotal-amount">0.00</span></span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax (10%):</span>
+                        <span>₹<span id="tax-amount">0.00</span></span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span>₹<span id="total-amount">0.00</span></span>
+                    </div>
+                    <button id="checkout-btn" class="cta-button">Proceed to Checkout</button>
+                </div>
+            </div>
+
+            <!-- Add this after the cart summary section -->
+            <div class="payment-section" id="payment-section" style="display: none;">
+                <h3>Select Payment Method</h3>
+                <div class="payment-methods">
+                    <div class="payment-method">
+                        <input type="radio" id="upi" name="payment" value="upi">
+                        <label for="upi">
+                            <i class="fas fa-mobile-alt"></i>
+                            UPI
+                            <span class="payment-logos">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/UPI-Logo-vector.svg/200px-UPI-Logo-vector.svg.png" alt="UPI">
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="payment-method">
+                        <input type="radio" id="card" name="payment" value="card">
+                        <label for="card">
+                            <i class="fas fa-credit-card"></i>
+                            Credit/Debit Card
+                            <span class="payment-logos">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/200px-Mastercard-logo.svg.png" alt="Mastercard">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/200px-Visa_Inc._logo.svg.png" alt="Visa">
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="payment-method">
+                        <input type="radio" id="netbanking" name="payment" value="netbanking">
+                        <label for="netbanking">
+                            <i class="fas fa-university"></i>
+                            Net Banking
+                        </label>
+                    </div>
+
+                    <div class="payment-method">
+                        <input type="radio" id="cod" name="payment" value="cod">
+                        <label for="cod">
+                            <i class="fas fa-money-bill-wave"></i>
+                            Cash on Delivery
+                        </label>
+                    </div>
+                </div>
+
+                <div class="payment-details">
+                    <!-- Add this before the payment methods in the payment section -->
+                    <div class="delivery-address-section">
+                        <h3>Delivery Address</h3>
+                        <div class="saved-addresses" id="savedAddresses">
+                            <!-- Saved addresses will be displayed here -->
+                        </div>
+                        
+                        <form id="addressForm" class="address-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" id="fullName" required placeholder="Enter your full name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" required placeholder="Enter your phone number">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="street">Street Address</label>
+                                <input type="text" id="street" required placeholder="Enter street address">
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" required placeholder="Enter city">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pincode">Pincode</label>
+                                    <input type="text" id="pincode" required placeholder="Enter pincode">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="addressType">Address Type</label>
+                                <select id="addressType" required>
+                                    <option value="home">Home</option>
+                                    <option value="work">Work</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="save-address-toggle">
+                                <input type="checkbox" id="saveAddress">
+                                <label for="saveAddress">Save this address for future orders</label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- UPI Section -->
+                    <div class="payment-form upi-form" style="display: none;">
+                        <div class="form-group">
+                            <label for="upi-id">UPI ID</label>
+                            <input type="text" id="upi-id" placeholder="yourname@upi">
+                        </div>
+                        <button class="pay-now-btn">Pay ₹<span class="payment-amount">0</span></button>
+                    </div>
+
+                    <!-- Card Section -->
+                    <div class="payment-form card-form" style="display: none;">
+                        <div class="form-group">
+                            <label for="card-number">Card Number</label>
+                            <input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="expiry">Expiry Date</label>
+                                <input type="text" id="expiry" placeholder="MM/YY" maxlength="5">
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="password" id="cvv" placeholder="123" maxlength="3">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="card-name">Name on Card</label>
+                            <input type="text" id="card-name" placeholder="John Doe">
+                        </div>
+                        <button class="pay-now-btn">Pay ₹<span class="payment-amount">0</span></button>
+                    </div>
+
+                    <!-- Net Banking Section -->
+                    <div class="payment-form netbanking-form" style="display: none;">
+                        <div class="form-group">
+                            <label for="bank-select">Select Bank</label>
+                            <select id="bank-select">
+                                <option value="">Select a bank</option>
+                                <option value="sbi">State Bank of India</option>
+                                <option value="hdfc">HDFC Bank</option>
+                                <option value="icici">ICICI Bank</option>
+                                <option value="axis">Axis Bank</option>
+                            </select>
+                        </div>
+                        <button class="pay-now-btn">Pay ₹<span class="payment-amount">0</span></button>
+                    </div>
+
+                    <!-- COD Section -->
+                    <div class="payment-form cod-form" style="display: none;">
+                        <p>Cash on Delivery charge: ₹50</p>
+                        <button class="pay-now-btn">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Get in Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>(123) 456-7890</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@eatright.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Indiranagar, Bangalore</p>
+                        </div>
+                    </div>
+                    <div class="opening-hours">
+                        <h3>Opening Hours</h3>
+                        <div class="hours-grid">
+                            <div class="hours-item">
+                                <span>Monday - Friday</span>
+                                <span>8:00 AM - 10:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Saturday - Sunday</span>
+                                <span>8:00 PM - 12:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tasty Delights</h3>
+                <p>Serving quality food since 2024</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#specials">Specials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tasty Delights. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const fallbackImages = {
+            'thali': './images/thali.jpg',
+            'biryani': './images/biryani.jpg',
+            'curry': './images/curry.jpg',
+            'dosa': './images/dosa.jpg',
+            'samosa': './images/samosa.jpg',
+            'palak-paneer': './images/palak-paneer.jpg'
+        };
+
+        // Handle image load errors
+        document.querySelectorAll('.item-image img').forEach(img => {
+            img.onerror = function() {
+                const category = this.closest('.menu-item').dataset.category;
+                if (fallbackImages[category]) {
+                    this.src = fallbackImages[category];
+                } else {
+                    this.src = './images/default-dish.jpg';
+                }
+            };
+        });
+    });
+    </script>
+</body>
+</html> 
